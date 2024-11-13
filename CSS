@@ -1,26 +1,30 @@
-/* Allgemeine Einstellungen */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background: #333;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 1rem;
+}
+
+header .logo img {
+    height: 40px;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    text-align: right;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -28,23 +32,44 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+section {
+    padding: 40px 20px;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
+#home {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.cta-btn {
+    background: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
 }
 
 footer {
+    background: #333;
+    color: white;
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
+
