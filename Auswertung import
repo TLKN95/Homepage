@@ -1,0 +1,16 @@
+import pandas as pd
+from openpyxl import load_workbook
+
+# Laden der .xlsx Datei
+df = pd.read_excel(P:\Ing Loew\02 Projekte\Laufende Projekte_2025_Python)
+
+# Auswertungen mit Pandas (Beispiele)
+# Filterung
+df_filteriert = df[df["Spalte"] > 10]
+
+# Gruppierung und Aggregation
+df_agregiert = df.groupby("Spalte2")["Spalte3"].sum()
+
+# Speichern der Ergebnisse
+df_filteriert.to_excel("auswertung_filteriert.xlsx", index=False)
+df_agregiert.to_csv("auswertung_agregiert.csv")
